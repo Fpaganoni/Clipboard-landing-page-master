@@ -68,12 +68,19 @@ body {
   padding: 1em 0;
   border-radius: 2rem;
   text-decoration: none;
-  box-shadow: 0 0 12px -5px var(--Strong-Cyan);
+  transition: box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 5px 5px 12px -5px var(--Strong-Cyan);
+  }
 }
 
 .button_cta_blue {
   background-color: var(--Light-Blue);
-  box-shadow: 0 0 12px -5px var(--Light-Blue);
+
+  &:hover {
+    box-shadow: 5px 5px 12px -5px var(--Light-Blue);
+  }
 }
 
 /*  MAIN - SECTION TRACK */
@@ -201,6 +208,10 @@ body {
 .footer_link {
   text-decoration: none;
   color: var(--Dark-Grayish-Blue);
+
+  &:hover {
+    color: var(--Strong-Cyan);
+  }
 }
 
 .footer_social {
@@ -216,6 +227,12 @@ body {
 .footer_icon {
   width: 1.3rem;
   vertical-align: middle;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    filter: brightness(0) saturate(100%) invert(39%) sepia(83%) saturate(747%)
+      hue-rotate(140deg) brightness(95%) contrast(90%);
+  }
 }
 
 /*   MEDIA QUERYS 768px  */
